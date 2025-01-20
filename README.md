@@ -18,6 +18,13 @@ The model is where
 The mean and stardard deviations files are located in 
 model. zip has all the necessary files including the trained model (.h5) and means/std files (.csv)
 
+# Requirements
+Programming Languages: Python 3.7+
+  Libraries:
+  tensorflow
+  numpy
+  rasterio
+  
 # reference
 There is a paper in review for the codes: 
 
