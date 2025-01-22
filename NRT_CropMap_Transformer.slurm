@@ -9,9 +9,11 @@
 #SBATCH --time=14-00:00:00    #Days-Hours:Minutes:Seconds, e.g. 1-00:00:00 represents 1 day
 #SBATCH --partition=gpu       # compute(54 40cors 120gb mem), bigmem(5-80cors,3tb mem), gpu(4, 40cores, 798gb mem)
 #SBATCH --gres=gpu:2
+#SBATCH --mail-type=ALL #see https://slurm.schedmd.com/sbatch.html for all options.
+#SBATCH --mail-user=hankui.zhang@sdstate.edu
 
 # =========== implementation ================================================================= #
-# cd /slurm_location_directory/ 
+# cd /mmfs1/home/jacks.local/hankui.zhang/mycode.research/LCMAP/HLS_crop_type/classification2
 # sbatch NRT_CropMap_Transformer.slurm
 # ============================================================================================ #
 
@@ -51,6 +53,9 @@ indir=/location_of_Pro_load_model_run_tile_v5_0.py
 file=("Pro_load_model_run_tile_v5_1.py")
 
 # for file in ${files[@]}; do
-$cmd $indir/$file 
+$cmd $indir/$file /mmfs1/scratch/jacks.local/yu.shen2069/Data/HLS/Raw/ /mmfs1/scratch/jacks.local/hankui.zhang/workspace/hls_transformer/test_output/ T14TLT 2023 190
+
+# /mmfs1/scratch/jacks.local/yu.shen2069/Data/HLS/Raw /mmfs1/scratch/jacks.local/hankui.zhang/workspace/hls_transformer/test_output T14TLT 2023 190
+
 ## ============= Single Job================================================================== # 
 date

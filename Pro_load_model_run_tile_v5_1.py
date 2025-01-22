@@ -256,11 +256,12 @@ def load_model(model_path, periods=PERIODS):
 ## ============================================================================================================ 
 ## run time example:
 # INPUTDIR_ROOT = "/mmfs1/scratch/jacks.local/yu.shen2069/Data/HLS/Raw"  # input HLS raw data directory
-# CLASS_DIR  = "/mmfs1/scratch/jacks.local/hankui.zhang/workspace/hls_transformer/test_output" # output for HLS Land cover predictions
+# CLASS_DIR  = "/mmfs1/scratch/jacks.local/hankui.zhang/workspace/hls_transformer/test_output/" # output for HLS Land cover predictions
 # tile_ID         =   "T14TLT"
 # FIRST_YEAR      =   2022
 # DOYset          =   190
-## python Pro_load_model_run_tile_v5_1.py /mmfs1/scratch/jacks.local/yu.shen2069/Data/HLS/Raw /mmfs1/scratch/jacks.local/hankui.zhang/workspace/hls_transformer/test_output T14TLT 2023 190
+## python Pro_load_model_run_tile_v5_1.py /mmfs1/scratch/jacks.local/yu.shen2069/Data/HLS/Raw/ /mmfs1/scratch/jacks.local/hankui.zhang/workspace/hls_transformer/test_output/ T14TLT 2023 190
+
 if __name__ == "__main__":
     
     ### input tiles, satellites, and years:
@@ -335,10 +336,11 @@ if __name__ == "__main__":
     tiles_array.append(tile_ID) 
     # IF Month is assigned (to be non -1), please set up the DOYset to be -1. IF DOYset is assigned (to be non -1), please set up the Month to be -1
     Month = -1 
+    # CLASS_DIR = CLASS_DIR+"/"
     if not os.path.isdir(CLASS_DIR): 
         os.makedirs(CLASS_DIR)      
     
-    BROWSE_DIR = CLASS_DIR+"/browse"
+    BROWSE_DIR = CLASS_DIR+"/browse/"
     if not os.path.isdir(BROWSE_DIR): 
         os.makedirs(BROWSE_DIR)
     
