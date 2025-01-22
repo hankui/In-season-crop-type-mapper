@@ -38,5 +38,3 @@ This Transformer-based model is based on the classifying the raw irregular time 
 
 "Zhang, H. K., Luo, D., & Li, Z. (2024). Classifying raw irregular time series (CRIT) for large area land cover mapping by adapting transformer model. Science of Remote Sensing, 100123. https://doi.org/10.1016/j.srs.2024.100123" with a set of customalization and adaptions due to different data sturctures and inputs. 
 
-.
-
