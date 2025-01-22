@@ -9,10 +9,15 @@ This mapper utilizes two years of HLS data (the previous year and the current ye
 
 Pro_load_model_run_tile_v5_1.py [Input_dir] [Output_dir] [HLS-tile] [year] [day_of_year] [batch_size]
   Input_dir: The input HLS data directory, the HLS data are orgnized the same way as NASA or any other ways. The filename should not be chagned. It is better to end with '/' or '\'
+  
   Output_dir: The output directory to store the map result, it is better to end with '/' or '\'
+  
   HLS-tile: the HLS tile name, e.g., T14TPP - must start with 'T'
+  
   Year: refers to the current year for which the crop type mapping is generated
+  
   Day of year: refers to the day of year for which the crop type mapping is generated
+  
   Batch size: the batch size used for the model running, default to 2048
 
 The model and mean and stardard deviations files are located in this repository.  
