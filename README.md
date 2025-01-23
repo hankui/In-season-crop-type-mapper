@@ -8,6 +8,7 @@ Corn, cotton, fallow/idle cropland, soybeans, winter wheat, barley, dbl/crop win
 
 # Usage
 Pro_load_model_run_tile_v5_1.py [Input_dir] [Output_dir] [HLS_tile] [year] [day_of_year] [batch_size]
+
   Input_dir: The input HLS data directory, the HLS data are orgnized the same way as NASA or any other ways. The filename should not be chagned. It is better to end with '/' or '\'
   
   Output_dir: The output directory to store the map result, it is better to end with '/' or '\'
